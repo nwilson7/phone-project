@@ -10,7 +10,7 @@ fi
 add_Contacts() {
         read -p "Enter the contact's name = " name
         if grep -q "^$name," "$myfile"; then
-                echo "id = $name already exists"
+                echo "name = $name already exists"
                 return
         fi
         read -p "Enter the mobile number = " mnumber
