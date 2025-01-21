@@ -2,8 +2,7 @@
 
 myfile="Contacts.txt"
 
-display_contacts()
-{
+display_contacts() {
     if [ ! -f "$myfile" ]; then
         echo "the file with name $myfile does not exist "
     else
@@ -11,5 +10,3 @@ display_contacts()
         cat "$myfile"
     fi
 }
-
-display_contacts

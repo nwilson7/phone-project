@@ -6,16 +6,14 @@ delete_contacts() {
     if [ ! -f "$myfile" ]; then
         echo "File = $myfile does not exist"
     else
-        read -p "Enter the name that needs to be deleted" name
+        read -p "Enter the name that needs to be deleted: " name
 
         if grep -q "^$name," "$myfile"; then
             echo "Contact exists"
-            sed -i "/$name,/d" "$myfile"
+            sed -i '' "/$name,/d" "$myfile"
             echo "Deleted contact with name = $name"
         else
             echo "Contact with name = $name does not exist"
         fi
     fi
 }
-
-delete_contacts

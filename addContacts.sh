@@ -20,5 +20,3 @@ add_contacts() {
         fi
         echo "$name,$mnumber" >>"$myfile"
 }
-
-add_contacts
