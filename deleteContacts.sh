@@ -2,7 +2,7 @@
 
 myfile="contacts.txt"
 
-delete_prod() {
+delete_contacts() {
     if [ ! -f "$myfile" ]; then
         echo "File = $myfile does not exist"
     else
@@ -18,4 +18,4 @@ delete_prod() {
     fi
 }
 
-delete_prod
+delete_contacts

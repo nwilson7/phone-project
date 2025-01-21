@@ -2,7 +2,7 @@
 
 myfile="contacts.txt"
 
-update_record() 
+update_contacts() 
 
 {
 
@@ -66,4 +66,4 @@ update_record()
 
 }
 
-update_record
+update_contacts

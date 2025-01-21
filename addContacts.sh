@@ -7,7 +7,7 @@ if [ ! -f "$myfile" ]; then
         echo "NAME,MNUMBER" >"$myfile"
 fi
 
-add_Contacts() {
+add_contacts() {
         read -p "Enter the contact's name = " name
         if grep -q "^$name," "$myfile"; then
                 echo "name = $name already exists"
@@ -21,4 +21,4 @@ add_Contacts() {
         echo "$name,$mnumber" >>"$myfile"
 }
 
-add_Contacts
+add_contacts

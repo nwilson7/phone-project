@@ -2,7 +2,7 @@
 
 myfile="contacts.txt"
 
-searchContacts()
+search_contacts()
 {
         read -p "Enter 1 for search by name 2 search by mobile number: " ch
 
@@ -37,4 +37,4 @@ searchContacts()
 
 }
 
-searchContacts
+search_contacts
