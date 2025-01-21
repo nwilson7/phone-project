@@ -19,18 +19,17 @@ view_message() {
 }
 
 view_all_messages() {
+
     if [[ -z "$(ls "$messagedir")" ]]; then
         echo "No messages found."
         return
     fi
 
+    read -p "Enter the number you would like to view all messages for: " number
+
+    file="$messagedir/$number.txt"
     echo "All messages: "
-    for file in "$messagedir"/*.txt; do
-        if [[ -f "$file" ]]; then
-            echo "Messages for $(basename "$file" .txt):"
-            tail -r "$file"
-        fi
-    done
+    tail -r "$file"
 
     rm -f "$messagedir"/*.txt
     echo "All messages have been deleted."
