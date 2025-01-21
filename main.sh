@@ -7,8 +7,8 @@ source updateContacts.sh
 source sendMessage.sh
 
 while true; do
-        read -p "1 Add contact 2 Delete contact 3 Display contact 4 Search contact 5 Update contact
-        6 Send message 7 View messages 8 Exit " ch
+        read -p "1 Add Contact 2 Delete Contact 3 Display Contact 4 Search Contact 5 Update Contact
+        6 Send Message 7 View Messages 8 Exit: " ch
         case $ch in
         1) add_contacts ;;
         2) delete_contacts ;;

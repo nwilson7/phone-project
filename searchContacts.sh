@@ -3,7 +3,7 @@
 myfile="contacts.txt"
 
 search_contacts() {
-        read -p "Enter 1 for search by name 2 search by mobile number: " ch
+        read -p "1 Search By Name 2 Search By Number: " ch
 
         case $ch in
         1)
