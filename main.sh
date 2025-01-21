@@ -8,8 +8,9 @@ source sendMessage.sh
 source viewMessage.sh
 
 while true; do
-        read -p "1 Add Contact 2 Delete Contact 3 Display Contact 4 Search Contact 5 Update Contact
-        6 Send Message 7 View Messages 8 Exit: " ch
+        echo -e "1. Add Contact\n2. Delete Contact\n3. Display Contact\n4. Search Contact\n5. Update Contact\n6. Send Message\n7. View Messages\n8. Exit"
+        read -p "Choose an option: " ch
+
         case $ch in
         1) add_contacts ;;
         2) delete_contacts ;;
