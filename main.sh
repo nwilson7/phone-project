@@ -5,6 +5,7 @@ source displayContacts.sh
 source searchContacts.sh
 source updateContacts.sh
 source sendMessage.sh
+source viewMessage.sh
 
 while true; do
         read -p "1 Add Contact 2 Delete Contact 3 Display Contact 4 Search Contact 5 Update Contact
@@ -16,7 +17,7 @@ while true; do
         4) search_contacts ;;
         5) update_contacts ;;
         6) send_message ;;
-        7) receive_message ;;
+        7) view_message ;;
         8) break ;;
         *) echo "invalid choice" ;;
         esac

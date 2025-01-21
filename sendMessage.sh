@@ -6,7 +6,7 @@ messagedir="messages"
 
 send_message() {
     read -p "Enter your number = " source
-    if ! grep -q ",$" "$myfile"; then
+    if ! grep -q ",$source" "$myfile"; then
         echo "Source number not found in contacts. Add it to contacts."
         return
     fi
