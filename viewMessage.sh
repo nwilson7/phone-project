@@ -32,7 +32,7 @@ view_all_messages() {
     tail -r "$file"
 
     rm -f "$file"
-    # rm -f "$messagedir"/*.txt
+
     echo "All messages have been deleted."
 }
 
