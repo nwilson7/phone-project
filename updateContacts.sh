@@ -46,7 +46,6 @@ update_contacts() {
             read -p "Enter the new number: " new_number
 
             sed -i '' "s/^$current_name,$current_number/$new_name,$new_number/" "$myfile"
-            # sed -i "s/^$id,[^,]*,[^,]*/$id,$new_name,$new_price/" "$myfile"
 
             echo "Contact name and number updated successfully."
             ;;
