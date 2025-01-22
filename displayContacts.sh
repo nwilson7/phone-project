@@ -1,6 +1,6 @@
 #! /bin/bash
 
-myfile="Contacts.txt"
+myfile="contacts.txt"
 
 display_contacts() {
     if [ ! -f "$myfile" ]; then

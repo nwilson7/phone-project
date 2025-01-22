@@ -4,6 +4,10 @@ myfile="contacts.txt"
 
 messagedir="messages"
 
+if [ ! -d "$messagedir" ]; then
+    mkdir "$messagedir"
+fi
+
 send_message() {
     read -p "Enter your number = " source
     if ! grep -q ",$source" "$myfile"; then
